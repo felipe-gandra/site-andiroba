@@ -17,6 +17,8 @@
         <a href="#info_video" class = "botao_saiba_mais">Veja nosso vídeo explicativo</a>
         <a href="#info_alunos" class = "botao_saiba_mais">Relatos dos alunos</a>
         <a href="#info_ajuda" class = "botao_saiba_mais">Informações</a>
+ 
+        <p class = "botao">Visualizações: <span id="contador">0</span></p>
 
     </div>
 
@@ -142,6 +144,8 @@
 
                 <!-- Imagem -->
             <img src="img/para.png" style="height: 70%; width: auto; margin-right: 6%;" class="borda_preta">
+
+            
     </div>
 
 
@@ -149,6 +153,21 @@
     
 
     </div>
+
+    <script>
+        // Verificar se o contador já existe no LocalStorage
+        if (localStorage.getItem('visualizacoes') === null) {
+            localStorage.setItem('visualizacoes', '0'); // Inicializa com 0 se não existir
+        }
+
+        // Incrementar o contador de visualizações
+        let contador = parseInt(localStorage.getItem('visualizacoes'));
+        contador += 1;
+        localStorage.setItem('visualizacoes', contador); // Salva o contador atualizado
+
+        // Exibir o contador na página
+        document.getElementById('contador').textContent = contador;
+    </script>
 </body>
 </html>
 
