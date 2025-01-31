@@ -68,6 +68,16 @@ body{
     margin-left:1%;
 }
 
+.botao{
+    background-color: rgb(146, 57, 57);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    width: fit-content;
+}
 
 .botao_saiba_mais:hover{
     background-color: green;
