@@ -1,0 +1,186 @@
+body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+}
+
+.fonte_80 {
+    font-size: 480%;
+    color:black
+
+}
+
+.centralizado{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fonte_bonita{
+    font-family:sans-serif;
+}
+
+.fundo_marrom{
+    background-color: rgb(146, 57, 57);
+    padding: 5px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+.letra_branca{
+    color: rgb(255, 255, 255);
+}
+
+.fundo_floresta{
+    background-image: url(../img/floresta.jpg);
+    margin-top: 0;
+    padding-bottom: 2%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.fundo_rio{
+    background-image: url(../img/rio.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.botao_saiba_mais{
+    background-color: rgb(146, 57, 57);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    width: fit-content;
+}
+
+.container_imagem_botao {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem e o botão um abaixo do outro */
+    align-items: center;  /* Centraliza ambos os itens */
+    gap: 10px;  /* Dá um espaçamento entre a imagem e o botão */
+    margin-right: 3%;
+    margin-left:1%;
+}
+
+
+.botao_saiba_mais:hover{
+    background-color: green;
+}
+
+.afasta_80px{
+    margin-left: 10%;
+}
+
+.texto_marrom{
+    color:rgb(146, 57, 57);
+}
+
+.fonte_40{
+    font-size: 200%;
+}
+
+.super_margem_esquerda{
+    margin-left: 65%;
+}
+
+.margem_esquerda{
+    margin-left: 10%;
+}
+
+.margem_direita{
+    margin-right: 10%;
+}
+
+.fundo_bege{
+    background-color: rgb(236, 186, 125);
+    margin-bottom: 0;
+}
+
+.fundo_bege_escuro {
+    background-color: rgb(245, 177, 94);
+    display: flex;               /* Ativa o flexbox */
+    align-items: center;        
+    justify-content: space-between; 
+    padding: 5px;      
+    gap:20px;        
+}
+
+.imagem_andiroba {
+    width: 100%; /* Faz a imagem ocupar todo o espaço do container */
+    max-width: 450px; /* Permite que ela fique maior em telas grandes */
+    min-width: 300px; /* Evita que fique muito pequena */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaços extras */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.paragrafo{
+    font-size: 150%;
+    margin-left: 1%;
+    max-width: 60%;  
+}
+
+.paragrafo2{
+    font-size: 150%;
+    margin-left: 1%;
+    max-width: 80%;  
+}
+
+
+.borda_preta{
+    border: 3px solid black;
+}
+
+.imagem_projeto {
+    width: 100%; /* Faz a imagem ocupar todo o espaço do container */
+    max-width: 550px; /* Permite que ela fique maior em telas grandes */
+    min-width: 400px; /* Evita que fique muito pequena */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaços extras */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.imagem_aluno {
+    width: 100%; /* Faz a imagem ocupar todo o espaço do container */
+    max-width: 340px; /* Permite que ela fique maior em telas grandes */
+    min-width: 200px; /* Evita que fique muito pequena */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaços extras */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .imagem_andiroba {
+        max-width: 60%; /* A imagem ocupa mais espaço quando a tela é pequena */
+    }
+
+    .texto_esquerda {
+        max-width: 100%; /* O texto ocupa toda a largura disponível */
+    }
+
+    .fonte_paragrafo {
+        font-size: 14px; /* Texto um pouco menor em telas pequenas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imagem_andiroba {
+        max-width: 80%; /* A imagem ocupa ainda mais espaço em telas muito pequenas */
+    }
+
+    .texto_esquerda {
+        max-width: 100%;
+    }
+
+    .fonte_paragrafo {
+        font-size: 12px; /* Texto ainda menor em telas muito pequenas */
+    }
+}
